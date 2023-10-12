@@ -6,14 +6,13 @@
 
 int main()
 {
-    std::string bild[10], comrades_name;
+    std::string bild[10];
     int room;
     std::cout << "Program ManAntHill\n";
     for (room = 0; room < 10; ++room)
     {
         std::cout << "Input the name of the comrade living into room " << room + 1 << ":\n";
-        std::getline(std::cin, comrades_name);
-        bild[room] = comrades_name;
+        std::getline(std::cin, bild[room]);
     }
     for (int i = 0; i < 3; ++i)
     {
